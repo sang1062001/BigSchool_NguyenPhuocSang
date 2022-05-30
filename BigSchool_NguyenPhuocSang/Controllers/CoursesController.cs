@@ -16,8 +16,7 @@ namespace BigSchool_NguyenPhuocSang.Controllers
         {
             _dbContext = new ApplicationDbContext();
         }
-        // GET: Courses
-        //
+        // GET: Courses        
         [Authorize]
         public ActionResult Create()
         {
@@ -29,6 +28,7 @@ namespace BigSchool_NguyenPhuocSang.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
             if(!ModelState.IsValid)
