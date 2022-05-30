@@ -17,6 +17,7 @@ namespace BigSchool_NguyenPhuocSang.Controllers
             _dbContext = new ApplicationDbContext();
         }
         // GET: Courses
+        //
         [Authorize]
         public ActionResult Create()
         {
