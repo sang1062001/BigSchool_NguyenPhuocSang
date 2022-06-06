@@ -16,6 +16,7 @@
     white-space: normal;
 }
 
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -28,3 +29,36 @@ textarea {
     background-color: #777;
     border-color: #fff
 }
+
+.navbar-inverse {
+    background-color: #d41d50;
+    border-color: #fbf6f6;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: white;
+    }
+
+    .course {
+        list-style: none;
+    }
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .course > li .date {
+        text-align: center;
+        background-color: #d41d50;
+        color: white;
+        width: 60px;
+        border-radius: 8px;
+    }
+    .course > li .details {
+        position: absolute;
+        top: 0;
+        left: 70px;
+    }
